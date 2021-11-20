@@ -32,11 +32,6 @@ export default {
         imgUrl: 'https://qimgs.qunarzz.com/piao_qsight_provider_piao_qsight_web/0105e1200047q48rpB98F.jpg_r_800x800_7168edde.jpg'
       }]
     }
-  },
-  computed: {
-    showSwiper () {
-      return this.list.length
-    }
   }
 }
 </script>
