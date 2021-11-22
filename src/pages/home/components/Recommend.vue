@@ -2,7 +2,7 @@
   <div>
       <div class="title">热销推荐</div>
     <ul>
-       <li class="item border-bottom" v-for="item of recommendList" :key="item.id" >
+       <li class="item border-bottom" v-for="item of list" :key="item.id" >
         <div class="item-img-wrapper">
             <img class="item-img" :src='item.imgUrl'/>
         </div>
@@ -19,25 +19,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/2005/1c/1ccff2940b61484ba3.water.jpg_200x200_529bdc6a.jpg',
-        title: '大千岛湖(AAAAA景区)',
-        desc: '杭州市淳安县千岛湖镇梦姑路348号千岛湖中心湖区游船码头'
-      }, {
-        id: '0002',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/2005/1c/1ccff2940b61484ba3.water.jpg_200x200_529bdc6a.jpg',
-        title: '大千岛湖(AAAAA景区)',
-        desc: '杭州市淳安县千岛湖镇梦姑路348号千岛湖中心湖区游船码头'
-      }, {
-        id: '0003',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/2005/1c/1ccff2940b61484ba3.water.jpg_200x200_529bdc6a.jpg',
-        title: '大千岛湖(AAAAA景区)',
-        desc: '杭州市淳安县千岛湖镇梦姑路348号千岛湖中心湖区游船码头'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
