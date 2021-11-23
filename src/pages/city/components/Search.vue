@@ -18,7 +18,7 @@ export default {
         padding: 0 .1rem
         background: $bgColor
         .search-input
-            box-sizing: border
+            box-sizing: border-box
             width: 100%
             height: .62rem
             padding: 0 .1rem
