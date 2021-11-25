@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <keep-alive>
+    <keep-alive exclude="Detail">
       <!-- <img src="./assets/logo.png"> -->
       <router-view/>
-    <keep-alive>
+    </keep-alive>
   </div>
 </template>
 
