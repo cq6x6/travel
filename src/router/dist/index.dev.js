@@ -32,7 +32,13 @@ var _default = new _vueRouter["default"]({
     path: '/detail/:id',
     name: 'Detail',
     component: _Detail["default"]
-  }]
+  }],
+  scrollBehavior: function scrollBehavior(to, from, savedPosition) {
+    return {
+      x: 0,
+      y: 0
+    };
+  }
 });
 
 exports["default"] = _default;
