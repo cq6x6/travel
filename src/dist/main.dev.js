@@ -10,6 +10,8 @@ var _fastclick = _interopRequireDefault(require("fastclick"));
 
 var _vueAwesomeSwiper = _interopRequireDefault(require("vue-awesome-swiper"));
 
+require("babel-polyfill");
+
 var _store = _interopRequireDefault(require("./store"));
 
 require("styles/reset.css");
@@ -24,6 +26,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+// 解决白屏问题
 // 解决1像素边框
 _vue["default"].config.productionTip = false;
 
